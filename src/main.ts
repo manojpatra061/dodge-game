@@ -212,7 +212,7 @@ function listenSpace(e: KeyboardEvent) {
   }
 }
 
-function listenClickOnPlayBtn(e: PointerEvent) {
+function listenClickOnPlayBtn(e: MouseEvent) {
   e.preventDefault();
   isGameRunning = !isGameRunning;
   pauseResumeGame(isGameRunning);
