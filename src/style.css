@@ -1,0 +1,31 @@
+* {
+  @apply box-border;
+}
+
+body {
+  @apply font-mono;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-base: #e2006f;
+  --color-primary: #FD042F;
+  --color-secondry: black; 
+  --color-accent: white;
+}
+
+@layer base {
+  h1 {
+    @apply font-bold text-6xl uppercase;
+  }
+  h2 {
+    @apply font-bold text-xl uppercase;
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}

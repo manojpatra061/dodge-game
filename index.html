@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Dodge Game</title>
+  </head>
+  <body class="bg-accent flex-center gap-4 h-screen">
+    <div class="flex flex-col gap-2">
+      <h1 class="m-auto">Dodge Game</h1>
+      <div class="bg-black flex flex-row rounded-sm p-4 gap-4">
+        <canvas id="canvas" class="bg-primary p-1 rounded-sm"></canvas>
+        <div
+          id="menu-bar"
+          class="bg-accent-2 px-1 rounded-sm bg-primary py-3 flex flex-col justify-between max-w-40 w-36"
+        >
+          <div class="flex flex-col items-center">
+            <h2>Score</h2>
+            <span id="score" class="text-2xl"></span>
+          </div>
+          <div id="speed" class="flex flex-col gap-1 items-center"></div>
+          <div>
+            <button
+              id="playBtn"
+              class="ring rounded-sm bg-accent text-secondry px-2 w-full uppercase hover:cursor-pointer"
+            >
+              Start
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-3">
+      <ul class="list-disc">
+        <li>
+          <p class="text-xs">Use ← → to dodge.</p>
+        </li>
+        <li>
+          <p class="text-xs leading-tight">Press spacebar to pause/resume.</p>
+        </li>
+      </ul>
+      <div id="result"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
